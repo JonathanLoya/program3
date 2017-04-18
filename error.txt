@@ -1,0 +1,25 @@
+TEST IglooScore1: 8 9
+TEST IglooScore1: 8 9 6 7
+The program exits if the user does not supply the program with exactly three arguments
+
+TEST IglooScore1: 8 c 6
+The program exits if the user inputs any one of the values to be a non-integer value
+
+
+
+TEST IglooScore2: '/0'"
+The program exits if the user does not supply the program with three arguments. The case where the arguments are null cannot be preformed, thus this case is never hit.
+
+IglooScore2:.java: Line 59, Column 8
+The statement "args==null" was removed from the if condition since hitting that condition is impossible given this current environment given.
+
+TEST IglooScore2: 8 g 6
+The program exits if the user inputs any one of the values to be a non-integer value
+
+TEST IglooScore2: -1 9 6
+TEST IglooScore2: 51 9 6
+TEST IglooScore2: 8 -1 6
+TEST IglooScore2: 8 51 6
+TEST IglooScore2: 8 9 -1
+TEST IglooScore2: 8 9 51
+If any inputed integer is not between the values 0 and 50, the program will return with an error.
